@@ -24,6 +24,8 @@ static Bool enableinspector = TRUE;
 static Bool loadimages = TRUE;
 static Bool hidebackground  = FALSE;
 
+#define HOMEPAGE "http://www.google.com/"
+
 #define SETPROP(p, q) { \
 	.v = (char *[]){ "/bin/sh", "-c", \
 		"prop=\"`xprop -id $2 $0 | cut -d '\"' -f 2 | dmenu`\" &&" \
