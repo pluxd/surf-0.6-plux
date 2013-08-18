@@ -15,6 +15,9 @@ static time_t sessiontime   = 3600;
 static char *cafile         = "/etc/ssl/certs/ca-certificates.crt";
 static char *strictssl      = FALSE; /* Refuse untrusted SSL connections */
 static int   indicator_thickness = 2;
+static SearchEngine searchengines[] = {
+    { "g",   "http://www.google.com/search?q=%s" },
+};
 
 /* Webkit default features */
 static Bool enablespatialbrowsing = TRUE;
